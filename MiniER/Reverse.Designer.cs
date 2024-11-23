@@ -34,6 +34,7 @@
             this.btn_Next = new System.Windows.Forms.Button();
             this.pn_connection = new System.Windows.Forms.Panel();
             this.btn_OK = new System.Windows.Forms.Button();
+            this.cb_update_schema = new System.Windows.Forms.CheckBox();
             this.pn_connection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +76,7 @@
             // 
             // pn_connection
             // 
+            this.pn_connection.Controls.Add(this.cb_update_schema);
             this.pn_connection.Controls.Add(this.pn_db);
             this.pn_connection.Controls.Add(this.ddl_engine);
             this.pn_connection.Controls.Add(this.label1);
@@ -93,6 +95,16 @@
             this.btn_OK.UseVisualStyleBackColor = true;
             this.btn_OK.Visible = false;
             this.btn_OK.Click += new System.EventHandler(this.btn_OK_Click);
+            // 
+            // cb_update_schema
+            // 
+            this.cb_update_schema.AutoSize = true;
+            this.cb_update_schema.Location = new System.Drawing.Point(293, 15);
+            this.cb_update_schema.Name = "cb_update_schema";
+            this.cb_update_schema.Size = new System.Drawing.Size(99, 17);
+            this.cb_update_schema.TabIndex = 3;
+            this.cb_update_schema.Text = "Update existing";
+            this.cb_update_schema.UseVisualStyleBackColor = true;
             // 
             // Reverse
             // 
@@ -121,5 +133,6 @@
         private System.Windows.Forms.Button btn_Next;
         private System.Windows.Forms.Panel pn_connection;
         private System.Windows.Forms.Button btn_OK;
+        public System.Windows.Forms.CheckBox cb_update_schema;
     }
 }

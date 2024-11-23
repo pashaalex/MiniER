@@ -13,7 +13,10 @@ namespace MiniER
 
         public SettingsDTO Settings
         {
-            get { return _settings?.Clone() as SettingsDTO; }
+            get {
+                if (_settings == null) return null;
+                return _settings.Clone() as SettingsDTO; 
+            }
             set {
                 _settings = (SettingsDTO)value.Clone();
                 cb_chow_datatype.DataBindings.Add("Checked", _settings, "ShowDataType");

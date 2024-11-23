@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-using Npgsql;
+// using Npgsql;
 using MiniER.Model;
-
+/*
 namespace MiniER.DB
 {
     public partial class Postgre_Modul : UserControl, IDBModul
@@ -104,8 +104,7 @@ from
 where 
     tc.constraint_type = 'PRIMARY KEY'").Rows)
                 {
-                    Field f = res.TableList.FirstOrDefault(n => n.TableName == dr[0].ToString())
-                        ?.Fields.FirstOrDefault(n => n.FieldName == dr[1].ToString());
+                    Field f = res.TableList.FirstOrDefault(n => n.TableName == dr[0].ToString())?.Fields.FirstOrDefault(n => n.FieldName == dr[1].ToString());
                     if (f != null) f.IsPK = true;
                 }
 
@@ -168,3 +167,4 @@ WHERE constraint_type = 'FOREIGN KEY'").Rows)
         }
     }
 }
+*/

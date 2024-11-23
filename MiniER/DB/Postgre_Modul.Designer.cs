@@ -1,5 +1,6 @@
 ﻿namespace MiniER.DB
 {
+    /*
     partial class Postgre_Modul
     {
         /// <summary> 
@@ -160,4 +161,5 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cb_database;
     }
+     */
 }
